@@ -1,4 +1,4 @@
-# 📈 Linear Regression From Scratch
+# 📈 # Simple Linear Regression from Scratch
 
 A Python implementation of **Simple Linear Regression** using **NumPy** without relying on machine learning libraries such as **scikit-learn**.
 
