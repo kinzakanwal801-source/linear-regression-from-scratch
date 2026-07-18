@@ -1,57 +1,56 @@
-# 📈 # Simple Linear Regression from Scratch
+# 📈 Simple Linear Regression from Scratch
 
-A Python implementation of **Simple Linear Regression** using **NumPy** without relying on machine learning libraries such as **scikit-learn**.
-
-## 🚀 Features
-
-- Calculates the mean of the dataset
-- Computes the slope and intercept using the Least Squares Method
-- Predicts house prices based on area
-- Pure NumPy implementation
-- Beginner-friendly code with comments
+This repository contains two Simple Linear Regression projects that demonstrate two different implementation approaches.
 
 ---
 
+## 🏠 Project 1: House Price Prediction (Using NumPy)
 
-## 📊 Dataset
+This project predicts house prices based on house area using NumPy for mathematical operations.
 
-| Area (sq ft) | Price |
-|--------------|-------|
-|260|55000|
-|300|55600|
-|320|16000|
-|360|68000|
-|400|72500|
-|426|75500|
-|450|79000|
+### ✨ Functions Used
+- ✅ np.mean()
+- ✅ np.square()
+- ✅ Array multiplication (`*`)
+- ✅ np.sum()
+- ✅ round()
 
----
-
-
-## 📌 Sample Output
-
-Enter the area: 550
-Slope:  196.0
-Intercept:  -10219
-Predicted price for area 450 is : 97581
-```
-
-## 🛠️ Technologies Used
-
-- Python
-- NumPy
+### 🛠️ Technologies
+- 🐍 Python
+- 🔢 NumPy
 
 ---
 
-## 📖 Concepts Used
+## 🎓 Project 2: Student Marks Prediction (Pure Python)
 
-- Linear Regression
-- Least Squares Method
-- NumPy Arrays
-- Mathematical Modeling
+This project predicts student marks based on study hours without using any external libraries.
+
+The entire algorithm is implemented using Python's built-in features.
+
+### ✨ Python Features Used
+- ✅ for loops
+- ✅ len()
+- ✅ sum()
+- ✅ Arithmetic operators
+- ✅ Lists
+- ✅ Variables
+
+🚫 No external libraries such as **NumPy** or **scikit-learn** are used.
 
 ---
 
-## 👨‍💻 Author
+## 🎯 Learning Outcomes
 
-Kinza Kanwal
+This repository demonstrates:
+
+- 📚 Building Simple Linear Regression using NumPy.
+- 💻 Implementing the same algorithm using pure Python.
+- 📊 Understanding how slope, intercept, and predictions are calculated.
+- 🔄 Comparing a library-based implementation with a manual implementation.
+
+## 🚀 Future Improvements
+
+- 📈 Add data visualization using Matplotlib
+- 📉 Calculate prediction error
+- 🧪 Add more datasets for testing
+- 🤖 Extend to Multiple Linear Regression
