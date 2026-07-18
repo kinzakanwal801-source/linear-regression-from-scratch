@@ -1,0 +1,41 @@
+"""
+This is a simple linear regression model to predict marks based on hours of study.
+Without using any libraries, we will calculate the slope and intercept of the 
+regression line and use it to make predictions.
+
+"""
+hours = [1, 2, 3, 4, 5]
+marks = [30, 40, 50, 60, 70]
+
+# Mean of hours
+mean_hours = sum(hours) // len(hours)
+for i in range(len(hours)):
+    diff_hours = hours[i] - mean_hours
+    
+# Mean of marks
+mean_marks = sum(marks) // len(marks)
+for i in range(len(marks)):
+    diff_marks = marks[i] - mean_marks
+
+sum = 0  
+#Numerator
+for i in range(len(hours)):
+    numerator = diff_hours * diff_marks
+sum_numerator = sum + numerator
+
+# Denominator
+sum_denominator = 0
+for i in range(len(hours)):
+    denominator = (diff_hours ** 2)
+sum_denominator = sum_denominator + denominator
+
+#slope
+slope = sum_numerator // sum_denominator         
+
+#Intercept
+intercept = mean_marks - (slope * mean_hours)
+
+#Prediction
+predicted_marks = int(input("Enter the number of hours: "))
+prediction = slope * predicted_marks + intercept
+print(f"Predicted marks for {predicted_marks} hours of study: {prediction}")
